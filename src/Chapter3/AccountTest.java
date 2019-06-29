@@ -21,6 +21,22 @@ public class AccountTest {
         
         Scanner input= new Scanner(System.in);
         double depositAmount;
+        System.out.println("Enter deposit ammount for account1 :");
+        depositAmount=input.nextDouble();
+        System.out.printf("\n adding %.2f to account1 balance\n\n",depositAmount);
+        account1.credit(depositAmount);
         
+        System.out.println("Account 1 balance "+account1.getBalance());
+        System.out.println("Account 2 balance "+account2.getBalance());
+        
+        
+        System.out.println("enter deposit amount for account2");
+        depositAmount=input.nextDouble();
+        // depositAmount=input.nextDouble();
+        System.out.printf("\n adding %.2f to account12S balance\n\n",depositAmount);
+        account2.credit(depositAmount);
+        
+        System.out.println("Account 1 balance "+account1.getBalance());
+        System.out.println("Account 2 balance "+account2.getBalance());
     }
 }
