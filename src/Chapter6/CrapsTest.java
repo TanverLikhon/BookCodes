@@ -1,5 +1,5 @@
 
-package Chapter4;
+package Chapter6;
 
 
 public class CrapsTest {
